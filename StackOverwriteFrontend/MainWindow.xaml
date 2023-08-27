@@ -1,0 +1,44 @@
+﻿<Window x:Class="StackOverwriteFrontend.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StackOverwriteFrontend"
+        mc:Ignorable="d"
+        Title="Home Page" Height="640" Width="1250" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FFFFDFD3" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Dobrodošli u StackOverwrite" HorizontalAlignment="Left" Margin="296,106,0,0" VerticalAlignment="Top" Height="70" Width="692" FontSize="52" FontFamily="Segoe UI Emoji" Foreground="#FF512B07"/>
+        <Label Content="Izaberite jednu od ponuđenih opcija" HorizontalAlignment="Left" Margin="328,238,0,0" VerticalAlignment="Top" Height="70" Width="590" FontSize="36" FontFamily="Segoe UI Emoji" Foreground="#FF512B07"/>
+        <Button x:Name="buttonLogin" Content="Prijavite se" HorizontalAlignment="Left" Margin="510,416,0,0" VerticalAlignment="Top" Width="226" Height="46" BorderBrush="#FF512B07" FontFamily="Segoe UI Emoji" FontSize="28" Foreground="#FF512B07" Click="buttonLogin_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7A4E24" Offset="0"/>
+                    <GradientStop Color="#FFE09144" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="buttonQuestions" Content="Pitanja" HorizontalAlignment="Left" Margin="194,416,0,0" VerticalAlignment="Top" Width="226" Height="46" BorderBrush="#FF512B07" FontFamily="Segoe UI Emoji" FontSize="28" Foreground="#FF512B07" Click="buttonQuestions_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7A4E24" Offset="0"/>
+                    <GradientStop Color="#FFE09144" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="buttonSignup" Content="Registrujte se" HorizontalAlignment="Left" Margin="830,416,0,0" VerticalAlignment="Top" Width="226" Height="46" BorderBrush="#FF512B07" FontFamily="Segoe UI Emoji" FontSize="28" Foreground="#FF512B07" Click="buttonSignup_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7A4E24" Offset="0"/>
+                    <GradientStop Color="#FFE09144" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
