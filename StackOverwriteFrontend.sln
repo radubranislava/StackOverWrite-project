@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverwriteFrontend", "StackOverwriteFrontend\StackOverwriteFrontend.csproj", "{0D285C07-51C2-45A6-AB88-E5BF94D64A64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D285C07-51C2-45A6-AB88-E5BF94D64A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D285C07-51C2-45A6-AB88-E5BF94D64A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D285C07-51C2-45A6-AB88-E5BF94D64A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D285C07-51C2-45A6-AB88-E5BF94D64A64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCD07F3F-0983-4983-89F9-0BBB92CDD679}
+	EndGlobalSection
+EndGlobal

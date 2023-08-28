@@ -16,5 +16,3 @@ VALUES ('Rekurzija je koncept u programiranju gde funkcija poziva samu sebe. Pri
 
 INSERT INTO odgovor (tekst_odgovora,datum_postavljanja,id_korisnika)
 VALUES ('Staticka tipizacija zahteva unapred definisane tipove i proverava ih pre izvrsavanja. Dinamicka tipizacija dozvoljava promenu tipova tokom izvrsavanja. Staticka tipizacija pruza vecu sigurnost, dok dinamicka tipizacija donosi vecu fleksibilnost.','2023-08-31 9:30:00',2);
-
-
