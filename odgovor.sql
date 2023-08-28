@@ -1,30 +1,26 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Aug 26, 2023 at 10:54 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+CREATE TABLE odgovor (
+  id_odgovora int IDENTITY(1,1)  NOT NULL primary key,
+  tekst_odgovora text NOT NULL,
+  datum_postavljanja datetime NOT NULL,
+  id_korisnika int NOT NULL
+) 
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
+alter table odgovor
+add constraint fkodgovorkorisnikk foreign key (id_korisnika)
+REFERENCES korisnik (id_korisnika)
+on delete no action
+on update cascade;
+
+INSERT INTO odgovor (tekst_odgovora,datum_postavljanja,id_korisnika)
+VALUES ('Rekurzija je koncept u programiranju gde funkcija poziva samu sebe. Primer problema resenog rekurzijom je izracunavanje faktorijela.','2023-08-28 17:30:00',1);
+
+INSERT INTO odgovor (tekst_odgovora,datum_postavljanja,id_korisnika)
+VALUES ('Staticka tipizacija zahteva unapred definisane tipove i proverava ih pre izvrsavanja. Dinamicka tipizacija dozvoljava promenu tipova tokom izvrsavanja. Staticka tipizacija pruza vecu sigurnost, dok dinamicka tipizacija donosi vecu fleksibilnost.','2023-08-31 9:30:00',2);
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
---
--- Database: `stackoverwrite`
---
 
--- --------------------------------------------------------
 
---
--- Table structure for table `odgovor`
 --
 
 CREATE TABLE `odgovor` (
