@@ -5,7 +5,6 @@ CREATE TABLE pitanjetag (
   id_taga int NOT NULL
 );
 
-
 ALTER TABLE pitanjetag
 ADD CONSTRAINT fkpitanjetagtag FOREIGN KEY (id_taga)
 REFERENCES tag(id_taga)
