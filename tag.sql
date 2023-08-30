@@ -3,6 +3,7 @@ CREATE TABLE tag (
   naziv_taga varchar(50) NOT NULL
 );
 
+
 INSERT INTO tag (naziv_taga)
 VALUES ('rekurzija');
 
