@@ -5,6 +5,7 @@ CREATE TABLE pitanje (
   datum_postavljanja datetime NOT NULL,
   id_korisnika int NOT NULL
 );
+
 ALTER TABLE pitanje
 ADD CONSTRAINT fkpitanjekorisnik FOREIGN KEY (id_korisnika)
 REFERENCES korisnik(id_korisnika)

@@ -3,6 +3,11 @@ CREATE TABLE korisnik (
 id_korisnika int IDENTITY (1,1) NOT NULL PRIMARY KEY,
 email varchar(30) NOT NULL,
 username varchar(30) NOT NULL,  
+
+lozinka varchar(30) NOT NULL
+);
+
+
 lozinka varchar(30) NOT NULL 
 );
 
